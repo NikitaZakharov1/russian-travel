@@ -4,12 +4,12 @@
     text-align: right;
     color: #FFFFFF;
 }
-.header__lang-link_en:hover {
+.header__lang-link_en:hover{
     opacity: 0.8;
     transition: opacity .5s linear 0s;
 }
-@media screen and (max-width: 320px) {
-    .header__lang-link_en {
+@media screen and (max-width: 320px){
+    .header__lang-link_en{
         font-size: 18px;
         line-height: 1.33;
     }
