@@ -9,3 +9,7 @@
 **Технологии**
 
 В проекте применяются технологии flexbox-верстки, grid-layot, и медиазапросы для адаптивности сайта.
+
+**Ссылка на мой проект**
+
+https://nikitazakharov1.github.io/russian-travel/index.html
