@@ -6,3 +6,8 @@
     text-transform: uppercase;
     color: #AAAAAA;
 }
+@media screen and (max-width: 767px){
+    .place__url-heading{
+        line-height: 1;
+    }
+}
