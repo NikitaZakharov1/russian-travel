@@ -1,13 +1,14 @@
 .footer__item-links{
     list-style: none;
     padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-template-rows: auto;
     column-gap: 18px;
 }
-@media screen and (max-width: 767px) {
-    .footer__item-links {
+@media screen and (max-width: 767px){
+    .footer__item-links{
         flex-direction: column;
         margin-bottom: 48px;
         grid-template-columns: auto;

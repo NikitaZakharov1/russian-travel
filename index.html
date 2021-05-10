@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset='UTF-8'>
+    <meta charset="UTF-8">
     <title>Путешествия по России</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Сайт посвещен путешествию по России,
     содержит рассказ о нескольких интересных и необычных местах для путешествий по Родине">
     <meta name="author" content="Nikita Zakharov">
     <link rel="shortcut icon" href="./images/header-logo.svg">
-    <link rel='stylesheet' href='./pages/index.css'>
+    <link rel="stylesheet" href="./pages/index.css">
 </head>
-<body>
+<body class="root">
     <div class="page">
         <header class="header">
             <img class="header__logo" src="./images/header-logo.svg" alt="Логотип в виде карты России">
-            <div class="header__lang-links">
-                <a class="header__lang-link_ru">Ru</a>
-                <a class="header__lang-link_en">En</a>
+            <div class="header__lang-links"><!-- на 1024 я не могу сдвинуть правее так как из за этого не будут совпадать отступы с макетом, погрешность не критичная -->
+                <a class="header__lang-link header__lang-link_active" href="#">Ru</a>
+                <a class="header__lang-link" href="#">En</a>
             </div>
         </header>
         <main class="content">
@@ -28,7 +28,7 @@
             </section>
             <section class="intro">
                 <h2 class="intro__title">Чего мы там не видели?</h2>
-                <p class="Intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране.
+                <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране.
                     Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана.
                     А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама,
                     которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране.
@@ -41,44 +41,46 @@
                         <li class="intro__list-paragraph">Аэропортов <span class="intro__list-numbers">241</span></li>
                     </ul>
             </section>
-            <ul class="photo-grid">
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-train.jpg" alt="фото окно в поезде">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-atharva-tulsi.jpg" alt="фото горы">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-tuman.jpg" alt="фото поле в тумане">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-sochi.jpg" alt="фото лес в тумане">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-arisa.jpg" alt="фото автомобильное колесо на льду">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-baikal.jpg" alt="фото песчаного пляжа Байкала">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-elbrus.jpg" alt="фото вершины Эльбруса">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-kondratiev.jpg" alt="фото знака пешеходный переход">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-kamchatka-1.jpg" alt="фото вулкана на камчатке">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-kamchatka-2.jpg" alt="фото горы на камчатке">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-baikal-2.jpg" alt="фото скалистого берега Байкала">
-                </li>
-                <li class="photo-grid__item">
-                    <img class="photo-grid__item-img" src="./images/photo-grid-ergaki.jpg" alt="фото горы в тумане">
-                </li>
-            </ul>
+            <section>
+                <ul class="photo-grid">
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-train.jpg" alt="фото окно в поезде">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-atharva-tulsi.jpg" alt="фото горы">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-tuman.jpg" alt="фото поле в тумане">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-sochi.jpg" alt="фото лес в тумане">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-arisa.jpg" alt="фото автомобильное колесо на льду">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-baikal.jpg" alt="фото песчаного пляжа Байкала">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-elbrus.jpg" alt="фото вершины Эльбруса">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-kondratiev.jpg" alt="фото знака пешеходный переход">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-kamchatka-1.jpg" alt="фото вулкана на камчатке">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-kamchatka-2.jpg" alt="фото горы на камчатке">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-baikal-2.jpg" alt="фото скалистого берега Байкала">
+                    </li>
+                    <li class="photo-grid__item">
+                        <img class="photo-grid__item-img" src="./images/photo-grid-ergaki.jpg" alt="фото горы в тумане">
+                    </li>
+                </ul>
+            </section>
             <section class="places">
                 <article class="place">
                     <h2 class="place__title">Куршская коса</h2>
@@ -87,7 +89,7 @@
                         <p class="place__url-heading">URL</p>
                         <a class="place__link" target="_blank" href="http://park-kosa.ru">park-kosa.ru</a>
                     </div>
-<div>
+                    <div>
                     <p class="place__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта — спокойного Куршского залива с одной стороны 
                         и подёрнутого рябью волн Балтийского моря с другой. 
                         Уникальная природная зона на краю российского анклава.</p>
@@ -161,12 +163,13 @@
                 </article>
             </section>
             <section class="cover">
-                <div class="cover__background">
+                
                     <a class="cover__overlay" target="_blank" href="https://stampsy.com/na-elektrichkakh-do-baikala">
+                        <img class="cover__background" src="./images/cover-trains.jpg" alt="железнодорожная развязка">
                         <h2 class="cover__title">До Байкала «на собаках»</h2>
                         <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes — путешествие от столицы до Байкала на электричках.</p>
                     </a>
-                </div>
+                
             </section>
         </main>
         <footer class="footer">
